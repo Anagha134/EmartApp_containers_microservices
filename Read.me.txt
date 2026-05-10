@@ -1,0 +1,24 @@
+## Continuous Integration Pipeline Overview
+
+This project demonstrates a **Continuous Integration (CI) pipeline** that automates the software build and validation process. The pipeline follows this workflow:
+
+**Developer → GitHub → Build → Unit Testing → Code Analysis → SonarQube Dashboard → Artifact Upload to Nexus Repository**
+
+### Pipeline Flow
+
+* Developers commit and push code changes to **GitHub**.
+* **Jenkins** fetches the latest source code from the repository.
+* The application is **built and compiled** automatically.
+* **Unit tests** are executed to validate code functionality.
+* **Code analysis** is performed using **SonarQube** to check code quality, security, and maintainability.
+* Analysis results are published to the **SonarQube Dashboard** for review.
+* If all stages pass successfully, the generated **artifact** is pushed to the **Nexus Repository** for storage and deployment use.
+
+### Project Setup
+
+This repository includes:
+
+* **Setup files** for provisioning **Jenkins**, **Nexus Repository**, and **SonarQube** servers on **AWS**.
+* **Jenkinsfiles** that define and automate the complete CI pipeline workflow.
+
+This setup provides a practical end-to-end implementation of a modern **DevOps CI pipeline**.
